@@ -184,16 +184,7 @@ body {
     z-index: -2;
 }
 
-.hero-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    z-index: -1;
-}
+/* Removed dots pattern for cleaner background */
 
 .hero-content {
     display: grid;
@@ -287,6 +278,15 @@ body {
     box-shadow: var(--shadow-2xl);
 }
 
+.video-description {
+    margin-top: var(--spacing-4);
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Additional video player cleanup */
 .video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -295,14 +295,8 @@ body {
     height: 100%;
     border: none;
     border-radius: var(--radius-xl);
-}
-
-.video-description {
-    margin-top: var(--spacing-4);
-    font-size: var(--font-size-sm);
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 500;
-    text-align: center;
+    /* Hide YouTube branding */
+    filter: contrast(1.02) brightness(1.02);
 }
 
 .hero-stats {
