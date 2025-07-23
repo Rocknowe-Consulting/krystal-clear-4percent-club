@@ -17,6 +17,14 @@
 
 ## 🎨 **Premium V5 Features Implemented**
 
+### **✅ Hero Section with Video**
+- **Main Headline:** "Join 2,100+ UK Business Owners Getting Weekly Profit-Boosting Strategies"
+- **Kim's Introduction Video:** YouTube embed (https://youtu.be/pxWcg7SCObA)
+- **Video Description:** "Watch Kim explain The 4% Club (30 seconds)"
+- **Professional Video Container:** Rounded corners, premium shadows
+- **Responsive Design:** Mobile-optimized video player
+- **Social Proof Badges:** Google Reviews and subscriber count
+
 ### **✅ Issue Previews Section**
 - **Issue #1:** "7 Profit Leaks Costing You £50k/Year"
 - **Issue #2:** "Your Cash Flow System in 5 Steps" 
