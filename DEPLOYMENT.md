@@ -21,6 +21,25 @@ vercel
 vercel --prod
 ```
 
+**If you encounter 404 errors:**
+1. Try using the simplified configuration:
+   ```bash
+   # Rename the simplified config
+   mv vercel-simple.json vercel.json
+   # Then deploy again
+   vercel --prod
+   ```
+
+2. Or deploy without custom configuration:
+   ```bash
+   # Remove vercel.json temporarily
+   mv vercel.json vercel.json.backup
+   # Deploy (Vercel will auto-detect the structure)
+   vercel --prod
+   # Restore config after successful deployment
+   mv vercel.json.backup vercel.json
+   ```
+
 ### 2. Netlify
 
 **One-Click Deploy:**
@@ -260,6 +279,7 @@ Add Google Analytics 4 to `index.html`:
    - Check environment variables
    - Verify API endpoint is accessible
    - Check browser console for errors
+   - Test API endpoint: `https://your-domain.vercel.app/api/test`
 
 2. **Images Not Loading:**
    - Verify image paths
@@ -275,6 +295,12 @@ Add Google Analytics 4 to `index.html`:
    - Check build logs
    - Verify all files are committed
    - Check platform-specific requirements
+
+5. **404 Errors on Vercel:**
+   - Ensure `vercel.json` is in root directory
+   - Check API routes are properly configured
+   - Try using `vercel-simple.json` as alternative
+   - Verify file structure matches Vercel requirements
 
 ### Getting Help
 
